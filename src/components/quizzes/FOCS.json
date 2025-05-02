@@ -1,0 +1,87 @@
+[
+  {
+    "title": "FOCS Quiz",
+    "questions": [
+      {
+        "questionText": "What is the time complexity of the Merge Sort algorithm in the worst case?",
+        "optionA": "O(n)",
+        "optionB": "O(n log n)",
+        "optionC": "O(n^2)",
+        "optionD": "O(log n)",
+        "correctOption": "B"
+      },
+      {
+        "questionText": "Which of the following data structures is used in the implementation of recursion?",
+        "optionA": "Queue",
+        "optionB": "Stack",
+        "optionC": "Linked List",
+        "optionD": "Heap",
+        "correctOption": "B"
+      },
+      {
+        "questionText": "Which logic gate returns true only when exactly one of its inputs is true?",
+        "optionA": "AND",
+        "optionB": "OR",
+        "optionC": "XOR",
+        "optionD": "NAND",
+        "correctOption": "C"
+      },
+      {
+        "questionText": "What does the Halting Problem state?",
+        "optionA": "There exists an algorithm that can determine if any arbitrary program will terminate.",
+        "optionB": "No algorithm can determine whether another arbitrary program will terminate.",
+        "optionC": "Every problem in NP is solvable in polynomial time.",
+        "optionD": "The Turing machine can solve all computational problems.",
+        "correctOption": "B"
+      },
+      {
+        "questionText": "Which notation is used to represent the upper bound of an algorithm's running time?",
+        "optionA": "Theta (Θ)",
+        "optionB": "Omega (Ω)",
+        "optionC": "Big O (O)",
+        "optionD": "Small o (o)",
+        "correctOption": "C"
+      },
+      {
+        "questionText": "What is the primary characteristic of a Turing-complete system?",
+        "optionA": "It can solve all decision problems in constant time.",
+        "optionB": "It can simulate any Turing machine.",
+        "optionC": "It can execute code in parallel.",
+        "optionD": "It has infinite memory capacity.",
+        "correctOption": "B"
+      },
+      {
+        "questionText": "Which of the following problems is known to be undecidable?",
+        "optionA": "Sorting an array",
+        "optionB": "Finding the shortest path in a graph",
+        "optionC": "Solving the Halting Problem",
+        "optionD": "Checking if a number is prime",
+        "correctOption": "C"
+      },
+      {
+        "questionText": "Which type of automaton is used to recognize regular languages?",
+        "optionA": "Pushdown Automaton",
+        "optionB": "Turing Machine",
+        "optionC": "Finite State Automaton",
+        "optionD": "Linear Bounded Automaton",
+        "correctOption": "C"
+      },
+      {
+        "questionText": "What is the main difference between P and NP problems?",
+        "optionA": "P problems can be solved in polynomial time, while NP problems cannot be solved at all.",
+        "optionB": "P problems are solvable in polynomial time, while NP problems have solutions verifiable in polynomial time.",
+        "optionC": "All NP problems can be reduced to P problems.",
+        "optionD": "P problems require exponential time complexity, while NP problems require polynomial time.",
+        "correctOption": "B"
+      },
+      {
+        "questionText": "What is the primary purpose of the pumping lemma?",
+        "optionA": "To prove that a language is context-free.",
+        "optionB": "To prove that a language is not regular.",
+        "optionC": "To determine if a language is Turing-recognizable.",
+        "optionD": "To optimize a DFA.",
+        "correctOption": "B"
+      }
+    ]
+  }
+]
