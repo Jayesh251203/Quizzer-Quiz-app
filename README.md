@@ -1,61 +1,146 @@
-# Quizzer - Your Friendly Quiz Companion
+# 🎯 Quizzer – Smart AI Quiz Platform
 
-Welcome to *Quizzer* – a sleek, lightweight quiz application built to make learning fun, beautiful, and accessible. Whether you're brushing up on your knowledge or just killing time, Quizzer gives you a smooth, modern experience that feels good to use.
-
----
-
-## Why Quizzer?
-
-We all love a good quiz. But so many quiz apps either feel clunky or dull. *Quizzer* was crafted with love to:
-
-- Be user-friendly and fun  
-- Look visually stunning (smooth animations and gradients)  
-- Work fast – no complex databases, just clean file-based storage  
-- Let you add and manage your own quizzes with ease
-
-No ads. No bloated features. Just a modern quiz experience that feels right.
+Quizzer is a **full-stack AI-powered quiz application** designed for teachers and learners to create, generate, and evaluate quizzes intelligently.  
+With the help of **Gemini AI**, users can instantly generate topic-based quizzes with difficulty control, attempt timed assessments, and receive detailed performance analytics with personalized feedback.
 
 ---
 
-## Features
+## 🚀 Key Highlights
 
-- *Home Interface*  
-  A polished, animated home screen that sets the tone.
-
-- *Tab Navigation*  
-  Navigate easily between Home, Quiz Selection, Quiz, Badges, Settings, and About – no page reloads, just seamless transitions.
-
-- *Dark Mode*  
-  Switch between light and dark themes with a beautiful gradient-based design.
-
-- *Quiz Selection Page*  
-  Browse all available quizzes categorized by subject. Includes a handy search bar to quickly find what you're looking for.
-
-- *Add Your Own Quizzes*  
-  Easily add custom quizzes to the system by dropping a JSON file. No backend knowledge needed.
-
-- *Badges and Progress Tracking*  
-  (Coming soon) Gamify your learning with badges and progress milestones.
+- 🤖 **AI Quiz Generation** using Gemini API  
+- 🎓 Built especially for **teachers** and educators  
+- ⏱️ Timed quiz assessments with structured evaluation  
+- 📊 Performance analytics with strong/weak area detection  
+- 🧠 AI-driven improvement recommendations after every attempt  
+- 📈 Long-term progress tracking using quiz history and scoring trends  
 
 ---
 
-## Tech Stack
+## ✨ Core Features
 
-- *Frontend*: HTML, CSS, JavaScript (React optional)  
-- *Backend*: Node.js + Express  
-- *Storage*: File System (JSON-based quizzes)
+### ✅ AI-Based Quiz Generation
+Generate quizzes instantly by selecting:
 
----
+- Topic name  
+- Number of questions  
+- Difficulty level (Easy / Medium / Hard)
 
-## Feedback
-
-Found a bug? Got an idea to make Quizzer better?  
-Open an issue or drop us a message – we’re always up for improving the experience together.
+Gemini AI creates high-quality questions dynamically.
 
 ---
 
-## License
-
-*MIT License* – free to use, modify, and share. Just don’t forget to have fun with it.
+### 📝 Manual Quiz Creation
+Teachers can also create quizzes manually for customized assessments.
 
 ---
+
+### ⏳ Timed Assessments
+Each quiz attempt supports a timed mode to simulate real exam environments.
+
+---
+
+### 📊 AI Performance Review & Feedback
+After completing a quiz, Quizzer provides:
+
+- Detailed performance breakdown  
+- Strength and weakness analysis  
+- Personalized AI suggestions for improvement  
+- Long-term progress insights based on past attempts  
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Technology |
+|------------|------------|
+| Frontend   | React.js |
+| Backend    | Node.js |
+| Database   | MongoDB |
+| AI Engine  | Gemini API |
+| Analytics  | Quiz history + scoring trends + AI recommendations |
+
+---
+
+## 📂 Project Overview
+
+Quizzer connects AI + analytics into a smart assessment workflow:
+
+1. Teacher selects topic + difficulty  
+2. Gemini generates quiz instantly  
+3. Student attempts quiz (timed evaluation)  
+4. System scores and analyzes performance  
+5. AI provides detailed feedback and improvement plan  
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to run Quizzer locally:
+
+---
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Jayesh251203/Quizzer-Quiz-app.git
+cd Quizzer-Quiz-app
+```
+🖥️ Frontend Setup (React)
+Install Dependencies
+```
+cd frontend
+npm install
+```
+Start React App
+```
+npm start
+```
+
+Frontend will run at:
+
+http://localhost:3000
+
+⚡ Backend Setup (Node.js)
+Install Backend Dependencies
+```
+cd backend
+npm install
+```
+Run Node.js Server
+```
+npm start
+```
+
+or (for development)
+```
+npm run dev
+```
+
+Backend will run at:
+
+http://localhost:8000
+
+🔑 Environment Variables
+
+Create a .env file inside backend folder and add:
+
+MONGO_URI=your_mongodb_connection_string
+
+GEMINI_API_KEY=your_gemini_api_key
+
+📌 Current Status
+
+🚧 Deployment not done yet — running locally for now.
+Future updates will include hosting + public demo access.
+
+
+👨‍💻 Author
+
+Built with ❤️ by Jayesh Kawale
+Full-stack AI Quiz Platform Project
+
+GitHub: Jayesh251203
+
+⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub — it helps a lot!
