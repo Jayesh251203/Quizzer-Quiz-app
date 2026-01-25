@@ -1,42 +1,23 @@
-import express from 'express';
-import fs from 'fs';
-import cors from 'cors';
+const path = require("path");
+const dotenv = require("dotenv");
+dotenv.config({ path: path.join(__dirname, ".env") });
+
+const express = require("express");
+const cors = require("cors");
+const connectDB = require("./config/db");
+
+dotenv.config();
+connectDB();
+
 const app = express();
-const PORT = 5000;
-
-app.use(express.json());
 app.use(cors());
+app.use(express.json({ limit: "1mb" }));
 
-const QUIZZES_FILE = './quizzes.json';
+const quizRoutes = require("./routes/quizRoutes");
+const aiRoutes = require("./routes/aiQuizRoutes");
 
-// Load quizzes
-app.get('/quizzes', (req, res) => {
-    fs.readFile(QUIZZES_FILE, 'utf8', (err, data) => {
-        if (err) {
-            return res.status(500).json({ error: 'Error reading quizzes' });
-        }
-        res.json(JSON.parse(data));
-    });
-});
+app.use("/api/quizzes", quizRoutes);
+app.use("/api/ai", aiRoutes);
 
-// Add a new quiz
-app.post('/quizzes', (req, res) => {
-    const newQuiz = req.body;
-    fs.readFile(QUIZZES_FILE, 'utf8', (err, data) => {
-        if (err) {
-            return res.status(500).json({ error: 'Error reading quizzes' });
-        }
-        const quizzes = JSON.parse(data);
-        quizzes.push(newQuiz);
-        fs.writeFile(QUIZZES_FILE, JSON.stringify(quizzes, null, 2), (err) => {
-            if (err) {
-                return res.status(500).json({ error: 'Error saving quiz' });
-            }
-            res.status(201).json({ message: 'Quiz added successfully' });
-        });
-    });
-});
-
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
